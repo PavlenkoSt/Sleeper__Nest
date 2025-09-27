@@ -11,6 +11,7 @@ RUN npm install -g pnpm
 RUN pnpm install
 
 COPY apps/reservations apps/reservations
+COPy libs libs
 
 RUN pnpm run build
 

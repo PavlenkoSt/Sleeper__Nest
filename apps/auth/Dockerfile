@@ -11,6 +11,7 @@ RUN npm install -g pnpm
 RUN pnpm install
 
 COPY apps/auth apps/auth
+COPy libs libs
 
 RUN pnpm run build
 
