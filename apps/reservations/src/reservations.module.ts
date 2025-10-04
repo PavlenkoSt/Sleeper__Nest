@@ -6,6 +6,7 @@ import {
   LoggerModule,
   AUTH_SERVICE,
   PAYMENTS_SERVICE,
+  HealthModule,
 } from '@app/common';
 import { Reservation, ReservationSchema } from './entities/reservation.entity';
 import { ReservationsRepository } from './reservations.repository';
@@ -55,6 +56,7 @@ import Joi from 'joi';
         inject: [ConfigService],
       },
     ]),
+    HealthModule,
   ],
   controllers: [ReservationsController],
   providers: [ReservationsService, ReservationsRepository],
